@@ -1,0 +1,54 @@
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.contact {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    background: linear-gradient(#bdc3c7, #2c3e50);
+    padding: 20px;
+    top: 50px;
+    position: relative;
+}
+
+.col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+}
+
+input[type=submit] {
+    background-color: greenyellow;
+    font-size: 1rem;
+    align-items: center;
+    height: 6vh;
+    width: 8vw;
+    margin-left: 42vw;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* feedback -------------------------------------------------------------------------------*/

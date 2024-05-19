@@ -1,0 +1,104 @@
+/* Product-------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+.itm-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(70%);
+    border-radius: 7px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p {
+    font-style: italic;
+    color: black;
+}
+
+.addToCart {
+    text-decoration: none;
+    color: black;
+    margin-left: 1px;
+}
+
+Button:hover {
+    color: White;
+    background-color: black;
+}
+
+button,
+.addToCart {
+    display: inline-block;
+    width: auto;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #606060;
+    background: none;
+    font-weight: 400;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.addToCart:hover {
+    color: White;
+    background-color: black;
+}
+
+.container {
+    margin: 0 auto 50px auto;
+    width: 90%;
+}
+
+.heading h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    /* margin-top: 25px; */
+    color: black;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px 50px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #606060;
+    height: 400px;
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: filter 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+.product:hover {
+    box-shadow: 5px 15px 25px#eeeeee;
+}
+
+.image {
+    height: 90%;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

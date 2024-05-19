@@ -1,0 +1,83 @@
+==> check second para identation in introduction
+
+==> spell mistake in introduction check "fead "
+
+==> need and scope second last line
+
+==> proposed system first para shoul be like this
+
+In the system, we are mentioned the admin login, purchase, sales and update stock. The admin can change and add new products, delete the product, Edit the product detail, generate the reports.
+ 
+==> Requirnment shoulb be like this 
+
+
+User Requirements:
+User roles and permissions (e.g., admin, employees, customers).
+User authentication and login.
+User profile management (e.g., registration, editing profile, password reset).
+Dashboard for different user roles.
+
+
+Product Management:
+Ability to add, edit, and delete products.
+Product categorization and filtering.
+Inventory management (e.g., stock levels, notifications for low stock).
+Product search functionality.
+
+
+Order Management:
+Shopping cart functionality.
+Checkout process (e.g., shipping address, payment options).
+Order tracking and history for customers.
+Order processing and fulfillment for admins.
+
+Reporting and Analytics:
+Sales reports.
+Inventory reports.
+Customer analytics (e.g., purchase history, demographics).
+Website traffic analytics.
+
+Security and Compliance:
+Secure data storage and encryption.
+Compliance with data protection regulations (e.g., GDPR).
+Protection against common security threats (e.g., SQL injection, cross-site scripting).
+
+Accessibility and Usability:
+Responsive design for mobile and desktop.
+Intuitive user interface and navigation.
+
+Testing and Quality Assurance:
+Test cases and scenarios for functional testing.
+Performance testing plan.
+Security testing plan (e.g., penetration testing).
+User acceptance testing criteria.
+
+Documentation and Support:
+User manuals and guides.
+Technical documentation for developers.
+Training materials.
+
+==> Front end and backend features
+
+
+==> Hardware requirnment 
+
+Ram 4gb 
+
+==> Software reqirnment
+add xampp server also
+
+==> Database Design 
+check system name i think system name should be as database name
+and table name should be like as same table
+
+==>input details madhye login che spelling chukliye
+
+==> description change kr input pages che
+
+instead of when you click on use "After click on about button"
+
+==> Check conslusion 
+
+==> Referance 
+remove Advance Java technology b

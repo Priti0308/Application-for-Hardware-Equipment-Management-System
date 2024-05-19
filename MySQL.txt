@@ -1,0 +1,66 @@
+signup
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE contactForm (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100),
+    phone_number VARCHAR(15),
+    email VARCHAR(100),
+    subject TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255),
+    brand_name VARCHAR(255),
+    manufacturer VARCHAR(255),
+    supplier VARCHAR(255),
+    price DECIMAL(10, 2),
+    category VARCHAR(100),
+    quantity INT,
+    manufacturer_date DATE,
+    warranty VARCHAR(100),
+    product_desc VARCHAR(5000),
+    product_image VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE cart (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+
+
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    company_name VARCHAR(100),
+    country VARCHAR(100) NOT NULL,
+    street_address VARCHAR(255) NOT NULL,
+    apartment VARCHAR(100),
+    city VARCHAR(100) NOT NULL,
+    state_county VARCHAR(100) NOT NULL,
+    postcode_zip VARCHAR(20) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    payment_method VARCHAR(50) NOT NULL,
+    product_names TEXT NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
